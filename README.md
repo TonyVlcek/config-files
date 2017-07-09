@@ -33,6 +33,9 @@ Exported settings into .jar archive. These settings are not versioned automatica
 
 > **TODO:** https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html jetbrains IDEs can backup, version and share their settings. Awesome. I'll have to take a look into it later on.
 
+## Terminator
+The config file is just copied from ~/.config/terminator/config.
+
 ## Ubuntu Keyboard shortcuts
 > TODO: custom shortcuts mapping, so that it doesn't colide with the on in my IDEs that I'm used to. 
 

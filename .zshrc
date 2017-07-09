@@ -107,6 +107,7 @@ alias trash-empty='gvfs-trash --empty'
 
 # Development
 alias gg='g++ --std=c++11 -Wall -pedantic'
+alias apigen='sudo php /var/www/apigen/apigen.phar'
 
 # Amati Webconsole
 alias webconsole='sudo -u www-data php /var/www/amati/admin/www/index.php'
