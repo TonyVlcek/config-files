@@ -1,11 +1,11 @@
 # _______                _       ____            _      
 #|__   __|              ( )     |  _ \          | |     
 #   | | ___  _ __  _   _|/ ___  | |_) | __ _ ___| |__   
-#   | |/ _ \| '_ \| | | | / __| |  _ < / _` / __| '_ \   
+#   | |/ _ \| '_ \| | | | / __| |  _ < / _` / __| '_ \  
 #   | | (_) | | | | |_| | \__ \ | |_) | (_| \__ \ | | | 
 #   |_|\___/|_| |_|\__, | |___/ |____/ \__,_|___/_| |_| 
-#				   __/ |                                
-#				  |___/                                
+#................   __/ |                               
+#                  |___/                                
 
 # If not running interactively, don't do anything
 case $- in
@@ -69,9 +69,6 @@ PS1="\[${Yellow}\][\t] \[${BGreen}\]\u@\h\[${Color_Off}\]:\[${BBlue}\]\w\[${Yell
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-# Enable Z command
-. /opt/z/z.sh
 
 # xset setup
 xset r rate 200 50		# speed up keyboard response
