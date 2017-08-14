@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages command-not-found)
+plugins=(git colored-man-pages command-not-found composer npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,4 +113,4 @@ alias apigen='sudo php /var/www/apigen/apigen.phar'
 alias webconsole='sudo -u www-data php /var/www/amati/admin/www/index.php'
 
 # Restrat network manager
-alias wifi-restart='sudo systemctl restartNetworkManager'
+alias wifi-restart='sudo service network-manager restart'
