@@ -114,3 +114,6 @@ alias webconsole='sudo -u www-data php /var/www/amati/admin/www/index.php'
 
 # Restrat network manager
 alias wifi-restart='sudo service network-manager restart'
+
+# EXA (ls alternative) aliases
+alias ll='exa -la@gh --git'

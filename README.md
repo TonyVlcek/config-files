@@ -8,6 +8,8 @@ The idea of this is to move my config files into one location (`~/.my-config`) a
 ## .zshrc & oh-my-zsh
 Installed mainly based on [this guide](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a).
 
+Added `ll` alias which uses the `exa` program. Nicer file and directory listings with git support. `ll` = `exa -la@gh --git` (more details in `man exa`).
+
 
 ## .bashrc & .bash\_aliases
 Insert to home directory. Some of the aliases depend on a specific software which must be installed first in order for them to work.
@@ -74,7 +76,7 @@ Exported settings into .jar archive. These settings are not versioned automatica
 The config file is just copied from ~/.config/terminator/config.
 
 ## Ubuntu Keyboard shortcuts
-> TODO: custom shortcuts mapping, so that it doesn't colide with the on in my IDEs that I'm used to. 
+> TODO: custom shortcuts mapping, so that it doesn't colide with the on in my IDEs that I'm used to.
 
 ## .gitconfig
 Few of my aliases and default setings for git. `Meld` diff program need for these stings to work because it's set as the default diff and merge tool.
