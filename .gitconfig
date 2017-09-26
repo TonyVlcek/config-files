@@ -24,3 +24,11 @@
 	cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 [core]
 	autocrlf = input
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	showbranch = auto
+	interactive = true
+	ui = true

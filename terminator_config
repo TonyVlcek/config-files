@@ -2,12 +2,15 @@
   enabled_plugins = InactivityWatch, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   handle_size = 3
   inactive_color_offset = 0.79
+  title_font = Sans 8
   title_hide_sizetext = True
   title_receive_bg_color = "#3398df"
   title_receive_fg_color = "#000000"
   title_transmit_bg_color = "#60bf21"
   title_transmit_fg_color = "#000000"
+  title_use_system_font = False
 [keybindings]
+  hide_window = <Primary>ISO_Level3_Shift
 [layouts]
   [[default]]
     [[[child1]]]
@@ -17,41 +20,11 @@
     [[[window0]]]
       parent = ""
       type = Window
-  [[MyTest]]
-    [[[child0]]]
-      fullscreen = False
-      last_active_term = 7f85957f-50f9-424f-9d35-93956f63880d
-      last_active_window = True
-      maximised = True
-      order = 0
-      parent = ""
-      position = 1985:24
-      size = 1855, 1056
-      title = tony@ZenBook: ~
-      type = Window
-    [[[child1]]]
-      order = 0
-      parent = child0
-      position = 1324
-      ratio = 0.715363881402
-      type = HPaned
-    [[[terminal2]]]
-      order = 0
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 7f85957f-50f9-424f-9d35-93956f63880d
-    [[[terminal3]]]
-      order = 1
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 4a1ea227-cbf8-4199-b92d-48e77e9be55e
 [plugins]
 [profiles]
   [[default]]
     background_color = "#282828"
-    background_darkness = 0.98
+    background_darkness = 0.96
     background_image = None
     background_type = transparent
     cursor_color = "#ffffff"
@@ -71,6 +44,3 @@
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     split_to_group = True
     use_system_font = False
-  [[test]]
-    background_image = None
-    cursor_color = "#e13737"
