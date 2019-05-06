@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages command-not-found composer npm)
+plugins=(git colored-man-pages command-not-found composer npm autojump docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,13 +107,16 @@ alias trash-empty='gvfs-trash --empty'
 
 # Development
 alias gg='g++ --std=c++11 -Wall -pedantic'
-alias apigen='sudo php /var/www/apigen/apigen.phar'
-
-# Amati Webconsole
-alias webconsole='sudo -u www-data php /var/www/amati/admin/www/index.php'
+alias npm-exec='PATH=$(npm bin):$PATH'
 
 # Restrat network manager
 alias wifi-restart='sudo service network-manager restart'
 
 # EXA (ls alternative) aliases
 alias ll='exa -la@gh --git'
+
+# Docker
+##Stop and remove all containers at once
+alias drca='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+## Remove all images at once
+alias dria='docker rmi $(docker images -a -q)'
