@@ -1,6 +1,6 @@
 [user]
 	email = vlcek.a@email.cz
-	name = TonyVlcek
+	name = Tony Vlček
 
 [alias]
 	co = checkout
@@ -8,6 +8,9 @@
 	st = status
 	ai = add --interactive
 	ap = add --patch
+
+	# Source: https://stackoverflow.com/a/33244119/3210309
+	catchup = "!f(){ echo -n \"reset \\033[0;33m$(git symbolic-ref -q --short HEAD)\\033[0m to \\033[0;33m$(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))\\033[0m? (Y/n) \"; read -r ans; if [ \"$ans\" = \"y\" -o \"$ans\" = \"Y\" -o -z \"$ans\" ]; then git reset --hard $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)); else echo \"catchup aborted\"; fi }; f"
 
 	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
@@ -29,6 +32,8 @@
 [core]
 	autocrlf = input
 	fileMode = false
+	editor = vim
+	excludesFile = "~/.gitignore-global"
 
 [color]
 	branch = auto
@@ -37,5 +42,6 @@
 	showbranch = auto
 	interactive = true
 	ui = true
+
 [push]
 	default = simple
